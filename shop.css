@@ -1,0 +1,57 @@
+/* Base styles */
+.container {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Link styles */
+.custom-link {
+    color: rgb(141, 1, 1);
+    text-decoration: none;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hover effect */
+.container:hover {
+    text-decoration: underline;
+    color: rgb(1, 111, 1);
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .container {
+        font-size: 14px; /* Slightly smaller font size for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        font-size: 13px; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        font-size: 12px; /* Even smaller font size for mobile devices */
+        padding: 10px;   /* Add some padding */
+    }
+
+    .custom-link {
+        font-size: 14px; /* Adjust link font size */
+    }
+
+    .container a {
+        font-size: 14px; /* Adjust link font size */
+    }
+}
+
+/* Ensure images are responsive */
+.container img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;    /* Maintain aspect ratio */
+}
